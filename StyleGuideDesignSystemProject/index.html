@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index.css" rel="stylesheet">
+    <title>Style Guide / Design System Project</title>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <ul class="nav">
+                <li><a href="#color">Color Palette</a></li>
+                <li><a href="#font">Font Families</a></li>
+                <li><a href="#styles">Text Styles</a></li>
+                <li><a href="#button">Button Styles</a></li>
+                <li><a href="#breadcrumbs">Breadcrumbs</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="bodycontent">
+        <main>
+            <h1 class="main">Style Guide & Design System Project</h1>
+            <p class="description">...A project for CodeCademy.</p>
+        <!--Color Swatches-->
+            <section class="section" id="color">
+                <h2 class="section">Color Palette</h2>
+                <div id="palette">
+                    <h3 id="palette-1">
+                        <br>Savory
+                        <br>Autumn
+                    </h3>
+                    <div class="color-1">
+                        <p class="description">RoastButternut<br>rgb(189, 97, 23)</p>
+                    </div>
+                    <div class="color-2">
+                        <p class="description">BlueAlgae<br>rgb(4, 110, 101)</p>
+                    </div>
+                    <div class="color-3">
+                        <p class="description">OnionSweat<br>rgb(219, 210, 182)</p>
+                    </div>
+                    <div class="color-4">
+                        <p class="description">PieCrust<br>rgb(237, 208, 168)</p>
+                    </div>
+                    <div class="color-5">
+                        <p class="description">FadedLeek<br>rgb(180, 199, 141);</p>
+                    </div>
+                </div>
+            </section>
+        <!--Font Families Section-->
+            <section class="section" id="font">
+                <h2 class="section">Font Families</h2>
+                <div class="fontfamilies">
+                    <div id="grapenuts">
+                        <h1>GrapeNuts, Main Heading size... I'd <span class="size36">size it up as a main heading.</span></h1>
+                        <h3>GrapeNuts, Level-3 Heading... Cute AF!</h3>
+                        <p>GrapeNuts, Standard paragraph look, <span class="bolder">and with font-weight set to 600...</span><span class="size20">Perhaps more readable when using 16-point font and a font-weight of 600. I like this font, but it isn't the most user-friendly for continuous reading.</span></p>
+                    </div>
+                    <div id="comfortaa">
+                        <h1>Comfortaa, Main Heading size... Easy to read.</h1>
+                        <h3>Comfortaa, 3rd-Level Heading... A nice sub-heading, feels casual.</h3>
+                        <p>Comfortaa, Standard paragraph look, not my favorite for a main-body text if I'm reading for very long. At the same time, it's not too hard on the eyes.</p>
+                    </div>
+                    <div id="cambria">
+                        <h1>Cambria, Main Heading size... Looks small to me. <span class="size36">Maybe at size 36?</span></h1>
+                        <h3>Cambria, Level-3 Heading size... Not bad, but <em>maybe</em> <span class="size24">a couple sizes up.</span></h3>
+                        <p>Cambria, Standard paragraph look. I don't know, this just isn't super appealing to me. <span class="size18">At size 18, perhaps? Yes, I actually like this a lot more. This font feels professional, like I'm meant to be reading something "matter-of-fact" in nature. <span class="linespace">I could see this working for recipe cards if the line spacing were a little taller. See what I did there? <span class=size16><em>*internal chuckle*</em></span> But in all seriousness, I may use this font and line spacing for my recipe pages...</span></span></p>
+                    </div>
+                </div>
+            </section>
+        <!--Text Styles Section-->
+            <section class="section" id="styles">
+                <h2 class="section">Text Styles</h2>
+                <div class="textstyles">
+                    <div class="textstyle_collection-1">
+                        <h1>(h1) "Comfortaa" 36px </h1>
+                        <h2>(h2) "GrapeNuts" size 36</h2>
+                        <h3>(h3) "Comfortaa", size 16</h3>
+                        <h4>(h4) "Cambria" size 20</h4>
+                        <p>(p) "Cambria" size 18, weight-400, line-height, 1.5. Highly readable, levels out playful fonts elsewhere, obvious to see that it's the main content in comparison</p>
+                        <p class="caption">(Captions) "Arial" size 14, italicized... easy to read *and* easy to ignore </p>
+                        <p class="footer">(Footer) "Cambria" size 20, weight 400, line-height 1.25, italicized. Attractive to the eye, fits the theme, but differentiated in its style.</p>
+                    </div>
+                    <div class="textstyle_collection-2">
+                        <h1>(h1) "Raleway" 40px</h1>
+                        <h2>(h2) "Anek" 36px</h2>
+                        <h3>(h3) "Raleway" 22px, black w/shadow</h3>
+                        <h4>(h4) "Anek" 20px, dark-sand color to contrast blue</h4>
+                        <p>(p) "Anek" 20px, letter-spacing .5px, line-height 1.25. Text is highly-readable, matches font-theme.</p>
+                        <p class="caption">(Captions) "Verdana" 13px, italic, font-weight 600, letter-spacing .3px. This font fits the theme well, is highly readable, and isn't distracting.</p>
+                        <p class="footer">(Footer) "Anek", 18px, font-weight 300</p>
+                    </div>
+                </div>
+            </section>
+        <!--Button Styles Section-->
+            <section class="section" id="button">
+                <h2 class="section">Button Styles</h2>
+                <div class="button_styles">
+                    <div class="button">
+                        <h3>Flat, basic</h3>
+                        <button class="button">I'm a basic, flat button.</button>
+                    </div>
+                    <div class="button">
+                        <h3>Flat, skeuomorphic</h3>
+                        <button class="button2">I'm a flat, skeumorphic button.</button>
+                    </div>
+                    <div class="button">
+                        <h3>Skeuomorphic</h3>
+                        <button class="button3">skeumorphic<br>button.</button>
+                    </div>
+                    <div class="button" id="button4_img">
+                        <h3>Translucent</h3>
+                        <button class="button4">Translucent Button</button>
+                    </div>
+                    <div class="button">
+                        <h3>Photographic Button</h3>
+                        <button class="button5">Photographic<br>Button</button>
+                        <p class="caption">(This button has an inset ridge border and an inset shadow box on hover/click)</p>
+                    </div>
+                </div>
+            </section>
+        <!--Breadcrumbs Section-->
+            <section class="section" id="breadcrumbs">
+                <div class="breadcrumb">
+                    <h2 class="section">Breadcrumbs<p class ="breadcrumb" class="description">(secondary navigation)</p></h2>
+                    <!--First breadcrumb example-->
+                    <div class="breadcrumb_1">
+                        <h3>Simple Breadcrumb</h3>
+                        <a href='#breadcrumbs' class="home">Home</a>
+                        <a href='#breadcrumbs' class="simple_crumb">Crumb</a>
+                        <a href='#breadcrumbs' class="simple_crumb">Crumb 2</a>
+                        <a href='#breadcrumbs' class="simple_crumb">Crumb 3</a>
+                    </div>
+
+                    <!--Second Breadcrumb example-->
+                    <div class="breadcrumb_2">
+                        <h3>Bordered Breadcrumb (arrow-shaped)</h3>
+                        <ul class="breadcrumb_2">
+                            <li>
+                                <a href='#breadcrumbs' class="arrow_crumb">Home</a>
+                            </li>
+                            <li>
+                                <a href='#breadcrumbs' class="arrow_crumb">Crumb</a>
+                            </li>
+                            <li>
+                                <a href='#breadcrumbs' class="arrow_crumb">Crumb 2</a>
+                            </li>
+                            <li>
+                                <a href='#breadcrumbs' class="arrow_crumb">Crumb 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>      
+        </main>
+    </div>
+</body>
+</html>

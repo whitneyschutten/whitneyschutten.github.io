@@ -1,0 +1,654 @@
+/* Fonts */
+    /* GrapeNuts */
+@font-face {
+    font-family:'GrapeNuts';
+    src: url('GrapeNuts-Regular.ttf') format('truetype');
+}
+    /* Comfortaa */
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('Comfortaa-VariableFont_wght.ttf') format('truetype');
+}
+    /* Raleway */
+@font-face {
+    font-family: 'Raleway';
+    src: url('Raleway-VariableFont_wght.ttf') format('truetype');
+}
+    /* Anek */
+@font-face {
+    font-family: 'Anek';
+    src: url('AnekDevanagari-VariableFont_wdth,wght.ttf') format('truetype');
+}
+
+/* Nav Bar */
+header {
+    margin-bottom: 130px;
+}
+div.nav {
+    box-sizing: border-box;
+    margin: 0 auto;
+    height: 130px;
+    width: 100%;
+    border-bottom: 3px dotted gray;
+    padding: 0;
+    Position: fixed;
+    top: 0;
+    display: block; 
+    background-color: rgb(255, 253, 252);
+    z-index: 998;
+    overflow: hidden;
+}
+ul.nav {
+    width: 90%;
+    height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+ul.nav li{
+    display: inline-block;
+    height: 30px;
+    width: auto;
+    border: 2px solid rgba(150, 72, 44, .4);
+    padding: 6px;
+    margin: auto auto;
+    border-radius: 8px;
+    z-index: 999;
+    background-color: rgb(180, 199, 141);
+    box-shadow: -2px 2px 1px 2px rgba(145, 56, 12, .2);
+    margin-bottom: 10px;
+}   
+ul.nav li:hover {
+    box-shadow: 2px -2px 1px 1px rgba(8, 97, 63, .15);
+    text-decoration-style: wavy;
+}
+ul.nav li:active {
+    box-shadow: 0 0 10px 8px rgba(80, 99, 51, 0.432) inset;
+}
+.nav a {
+    color: rgb(135, 76, 18);
+    font-family: 'GrapeNuts';
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: 500;
+}
+.nav a:hover {
+    color:rgba(135, 76, 18, 0.637);
+}
+.nav a:active {
+    color: rgb(128, 126, 123);
+}
+/* CSS Trick to help anchor links to headers accurately */
+section.section::before {
+    display: block;
+    content: " ";
+    margin-top: -125px;
+    height: 125px;
+    visibility: hidden;
+}
+
+/* Body */
+    /* general formatting */
+main *{
+    margin-left: 5px;
+}
+p.caption {
+    margin: 0;
+    font-style: italic;
+    font-size: 15px;
+}
+main p.description {
+    font-family: Cambria;
+    font-size: 18px;
+    font-style: italic;
+}
+span.bolder {
+    font-weight: 600;
+}
+span.size36 {
+    font-size: 36px;
+}
+span.size24 {
+    font-size: 24px;
+}
+span.size20 {
+    font-size: 20px;
+    font-weight: 600;
+}
+span.size18 {
+    font-size: 18px;
+}
+span.linespace {
+    line-height: 1.5;
+}
+div.bodycontent{
+    margin-top: 15px;
+    display: block;
+    height: fit-content;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(255, 253, 252);
+}
+
+/* MAIN TITLE */
+h1.main {
+
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Comfortaa', 'Arial';
+    font-size: 46px;
+    font-weight: 400;
+    color:rgb(34, 102, 74)
+}
+h1 + p {
+    text-align: center;
+    font-style: italic;
+    font-size: 18px;
+    font-family: Cambria;
+    color:rgb(108, 106, 103);
+}
+/* ...Section Headings */
+h2.section {
+    margin-top: 75px;
+    margin-left: 42px;
+    font-size: 42px;
+    font-weight: 500;
+    font-family: 'GrapeNuts';
+    color:rgb(135, 76, 18);
+    text-shadow: -3px 0 4px rgba(53, 53, 53, 0.6);
+    border: 2px outset rgba(4, 110, 101, .4);
+    background-color: rgb(237, 208, 168);
+    height: fit-content;
+    width: fit-content;
+    border-radius: 50%;
+}
+/* ... ...Section Sub-Headings */
+main h3{
+    font-family: 'Comfortaa';
+    color:rgb(34, 102, 74);
+    font-size: 20px;
+}
+
+/* COLOR PALETTE SECTION */
+
+    /* container for group of color swatches */
+div#palette {
+    display: flex;
+    justify-content: space-around;
+    border: 3px solid gray;
+    border-top: 2px solid gray;
+    border-right: 2px solid gray;
+    height: auto;
+    width: auto;
+    max-width: 1014px;
+    padding: 5px 10px;
+    background-color: white;
+    box-shadow: -6px 6px 2px 1px rgba(177, 176, 175, 0.685);
+    margin-right: 5px;
+}
+section#color > div {
+    margin-left: auto;
+    margin-right: auto;
+}
+    /* divs (universal color boxes) for color palettes */
+div#palette > div {
+    position: relative;
+    display: inline-block;
+    height: 160px;
+    width: 160px;
+    border: solid 2px black;
+    margin: 5px 5px;
+    padding: 0px;
+    text-align: center;
+}
+    /* COLOR SWATCHES */
+        /* Swatch 1 title (Savory Autumn) */
+    h3#palette-1 {
+        line-height: 30px;
+        text-shadow: 2px -1px rgba(135, 76, 18, .5);
+        text-decoration: underline 2px rgb(219, 210, 182);
+        position: relative;
+        width: 120px;
+    }
+        /* Swatch 1 colors (Savory Autumn) */
+div.color-1, div.color-1 p {
+    background-color: rgb(189, 97, 23);
+}
+div.color-2, div.color-2 p {
+    background-color: rgb(4, 110, 101);
+}
+div.color-3, div.color-3 p {
+    background-color: rgb(219, 210, 182);
+}
+div.color-4, div.color-4 p {
+    background-color: rgb(237, 208, 168);
+}
+div.color-5, div.color-5 p {
+    background-color: rgb(180, 199, 141);
+}
+
+/* FONT FAMILY SECTION */
+    /* Inner divs styling (for individual font families) */
+div.fontfamilies, 
+div.fontfamilies > div {
+    width: auto;
+    height: auto;
+    border: 2.5px solid rgba(4, 110, 101, .4);
+    border-radius: 15px;
+    padding: 5px;
+    margin: 15px;
+}
+    /* Background container */
+div.fontfamilies {
+    background-color: rgb(237, 208, 168);
+    box-shadow: 0 0 10px 6px rgba(4, 110, 101, .4);
+}
+    /* Separating-Containers */
+div.fontfamilies > div {
+    background-color: white;
+    box-shadow: -5px 4px 2px 1px rgba(143, 142, 141, .7);
+}
+    /* Font Families, box content */
+div#grapenuts h1,
+div#grapenuts h3,
+div#grapenuts p{
+    font-family: "GrapeNuts";
+    color: black;
+}
+div#comfortaa h1,
+div#comfortaa h3,
+div#comfortaa p{
+    font-family: "Comfortaa";
+    color: black;
+}
+div#cambria h1,
+div#cambria h3,
+div#cambria p{
+    font-family: "Cambria";
+    color: black;
+}
+
+/* TEXT STYLES SECTION */
+    /* Main div */
+div.textstyles {
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(237, 208, 168);
+    box-shadow: 0 0 10px 6px rgba(4, 110, 101, .4);
+    width: auto;
+    height: auto;
+    border: 2.5px solid rgba(4, 110, 101, .4);
+    border-radius: 15px;
+    padding: 5px;
+    margin: 0 auto;
+}
+    /* inner-div box-styling */
+div.textstyles > div.textstyle_collection-1,
+div.textstyles > div.textstyle_collection-2 {
+    box-sizing: border-box;
+    flex-shrink: 1 1;
+    flex-grow: 1 1;
+    width: auto;
+    max-width: 400px;
+    height: 610px;
+    border: 2.5px solid rgba(4, 110, 101, .4);
+    border-radius: 15px;
+    padding: 5px;
+    margin: 15px;
+    background-color: white;
+    box-shadow: -5px 4px 2px 1px rgba(143, 142, 141, .7);
+}
+    /* Text Styles (text style rules) */
+        /* group 1 */
+div.textstyle_collection-1 h1 {
+    font-family: "Comfortaa";
+    font-size: 36px;
+    color: rgb(4, 110, 101);
+}
+div.textstyle_collection-1 h2 {
+    font-family: "GrapeNuts";
+    font-size: 36px;
+    color: rgb(189, 97, 23);
+    text-shadow: -1.5px 1px rgba(75, 59, 16, .7);
+    text-shadow: 1.5px -1px rgba(75, 59, 16, .7);
+}
+div.textstyle_collection-1 h3 {
+    font-family: "Comfortaa";
+    font-size: 16;
+    color: rgb(4, 110, 101);
+}
+div.textstyle_collection-1 h4 {
+    font-family: "Cambria";
+    font-size: 20px;
+    margin-left: 30px;
+    font-weight: 600;
+}
+div.textstyle_collection-1 p {
+    font-family: "Cambria";
+    font-size: 18px;
+    font-weight: 400px;
+    line-height: 1.5;
+}
+div.textstyle_collection-1 p.caption {
+    font-family: Arial;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 600;
+    color: rgb(47, 49, 54);
+}
+div.textstyle_collection-1 p.footer {
+    font-family: "Cambria";
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.25;
+}
+        /* group 2 */
+div.textstyle_collection-2 h1 {
+    font-family: 'Raleway';
+    font-size: 38px;
+    text-transform: uppercase;
+    color: darkblue;
+    font-weight: 1000;
+    text-shadow: -2px 2px rgba(108, 106, 103, .7);
+}
+div.textstyle_collection-2 h2 {
+    font-family: 'Anek';
+    font-size: 36px;
+    font-weight: 400;
+    text-shadow: -1.5px 1px rgba(135, 119, 76, .7);
+}
+div.textstyle_collection-2 h3 {
+    font-family: 'Raleway';
+    font-size: 22px;
+    color: black;
+    text-shadow: -1px 1px rgba(31, 56, 102, .4);
+}
+div.textstyle_collection-2 h4 {
+    font-family: 'Anek';
+    font-size: 20px;
+    color: rgb(125, 91, 11);
+    letter-spacing: 1px;
+    margin-left: 30px;
+}
+div.textstyle_collection-2 p {
+    font-family: 'Anek';
+    font-size: 20px;
+    letter-spacing: .5px;
+    line-height: 1.25;
+    color: black;
+}
+div.textstyle_collection-2 p.caption {
+    font-family: Verdana;
+    font-size: 13px;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: .3px;
+    color: rgb(47, 49, 54);
+}
+div.textstyle_collection-2 p.footer {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+/* BUTTON SECTION */
+    /* div (container for buttons) */
+div.button_styles {
+    box-sizing: border-box;
+    background-color: rgb(237, 208, 168);
+    box-shadow: 0 0 10px 6px rgba(4, 110, 101, .4);
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    border: 2.5px solid rgba(4, 110, 101, .4);
+    border-radius: 15px;
+    padding-left: 75px;
+    padding-bottom: 50px;
+}
+    /* inner div (container for button & sub-heading) */
+div.button_styles > div.button {
+    margin-top: 50px;
+    margin-right: 80px;
+    display: inline-block;
+    text-align: center;
+    height: auto;
+    width: 250px;
+    border: 10px solid rgba(255, 255, 255, 0.308);
+    border-radius: 8%;
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.308), 0px 25px 15px 25px rgba(255, 255, 255, 0.308) inset;
+}
+    /* base-style for ALL buttons */
+div.button button{
+    display: inline-block;
+    height: auto;
+    width: auto;
+    font-family: Cambria;
+    font-size: 16px;
+    font-style: italic;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+div.button button:hover {
+    cursor: pointer;
+}
+    /* button 1 */
+button.button:active {
+    color: rgb(108, 106, 103);
+}
+    /* button 2 */
+button.button2 {
+    background-color:rgb(45, 148, 196);
+    border-color:rgb(47, 49, 54);
+    color: rgb(191, 219, 230);
+    border-radius: 5px;
+    box-shadow: -2px 2px 4px 3px rgba(75, 107, 119, 0.705);
+}
+button.button2:hover {
+    box-shadow: 0px 0px 8px 4px rgba(94, 118, 127, 0.705);
+    color: antiquewhite;
+}
+button.button2:active {
+    box-shadow: 0 0 12px 8px rgba(74, 98, 107, 0.5) inset;
+    color: rgb(37, 37, 37);
+    font-size: 15.5px;
+}
+    /* button 3 */
+button.button3 {
+    border-radius: 20px;
+    height: 450px;
+    width: 450px;
+    border-top: .5px solid gray;
+    border-left: .75px solid rgb(107, 107, 107);
+    border-right: .75px solid rgb(107, 107, 107);
+    border-bottom: 1.5px solid rgb(65, 65, 65);
+    background-color:rgb(156, 156, 156);
+    box-shadow: -3.2px 2.2px 0px 3.2px rgba(0, 0, 0, 0.384), -3px 2px 0px 3px rgb(155, 152, 152), -2.5px 1.5px 4px .2px white inset;
+}
+button.button3:hover {
+    box-shadow: -3.2px 2.2px 0px 3.2px rgba(0, 0, 0, 0.384), -3px 2px 0px 3px rgb(155, 152, 152), 2.5px -1.5px 4px .2px rgb(114, 114, 114) inset;
+    color: rgb(221, 221, 221);
+}
+button.button3:active {
+    box-shadow: 0 0 10px 10px rgba(85, 84, 84, 0.548) inset;
+    color: rgb(200, 200, 200);
+    border: 2px double rgba(81, 81, 81, 0.774);
+    position: relative;
+    top: 3.2px;
+    right: 2.2px;
+}
+    /* button 4 */
+        /* image behind button 4 */
+div#button4_img {
+    background: url('curry.JPG');
+    background-size: 200px auto;
+    background-repeat: no-repeat;
+    background-position: 53% 100%;
+}
+button.button4 {
+    background-color:rgba(92, 148, 75, 0.795);
+    border: 2px solid rgba(0, 0, 0, 0.671);
+    font-size: 17px;
+    font-weight: 600;
+}
+button.button4:hover{
+    border-color: white;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 13.5px;
+    letter-spacing: 1px;
+}
+button.button4:active {
+    border-color: rgb(175, 175, 175);
+    color: rgb(206, 205, 205);
+    background-color: rgb(92, 148, 75);
+    font-weight: 200;
+}
+    /* button 5 */
+button.button5 {
+    background: url('coffee.JPG');
+    background-size: 150px 150px;
+    background-position-y: 110px;
+    font-size: 18px;
+    font-weight: 600;
+    text-shadow: -2px 1px lightgray;
+    border: 20px ridge gray inset;
+    border-top-color: rgb(90, 90, 90);
+}
+button.button5:hover {
+    text-decoration: underline;
+    box-shadow: 0 0 10px 5px rgba(235, 233, 233, 0.555) inset;
+}
+button.button5:active {
+    box-shadow: 0 0 10px 5px rgba(85, 85, 85, 0.692) inset;
+    color: rgb(207, 207, 207);
+    text-shadow: -1.5px 1px rgb(80, 80, 80);
+    font-weight: 500;
+    font-size: 16.5px;
+    letter-spacing: .5px;
+}
+
+/* BREADCRUMBS SECTION */
+    /* heading, divs */
+p.breadcrumb{
+    position: relative;
+    bottom: 8px;
+    font-size: 18px;
+    padding-left: 10px;
+    color: black;
+    font-weight: 600;
+}
+h2.breadcrumb, p.breadcrumb{
+    margin: 0;
+}
+div.breadcrumb div h3 {
+    text-align: left;
+}
+div.breadcrumb, div.breadcrumb_2 {
+    display: block;
+    box-sizing: border-box;
+    padding: 0;
+    text-align: center;
+}
+div.breadcrumb_2 {
+    list-style: none;
+    overflow: hidden;
+    font-size: 13px;    
+    width: 100%;
+    align-content: center;
+    background-color: rgb(237, 208, 168);
+    box-shadow: 0 0 10px 6px rgba(4, 110, 101, .4);
+    width: auto;
+    height: auto;
+    border: 2.5px solid rgba(4, 110, 101, .4);
+    border-radius: 15px;
+    padding: 5px;
+    margin: 15px;
+}
+div.breadcrumb_1 {
+    background-color: rgb(237, 208, 168);
+    box-shadow: 0 0 10px 6px rgba(4, 110, 101, .4);
+    width: auto;
+    height: auto;
+    border: 2.5px solid rgba(4, 110, 101, .4);
+    border-radius: 15px;
+    padding: 5px;
+    margin: 15px;
+    padding-bottom: 40px;
+    margin-bottom: 50px;
+}
+    /* bottom margin for section */
+section#breadcrumbs {
+    margin-bottom: 75px;
+}
+
+/* First Breadcrumb example */
+a.home, a.simple_crumb {
+    text-decoration: none;
+    color: rgb(121, 68, 16);
+    font-size: 18px;
+}
+a.simple_crumb::before {
+    content: "> ";
+}
+a.simple_crumb:hover, a.home:hover {
+    color:rgb(34, 102, 74);
+}
+a.simple_crumb:active, a.home:active {
+    color: rgb(107, 32, 179);
+}
+/* Second Breadcrumb example */
+.breadcrumb_2 ul {
+    list-style: none;
+    display: inline-block;
+}
+.breadcrumb_2 ul li {
+    display: inline;
+}
+.breadcrumb_2 ul li a {
+    display: block;
+    float: left;
+    height: 50px;
+    background-color: rgb(25, 145, 129);
+    text-align: center;
+    padding: 30px 20px 0 60px;
+    position: relative;
+    margin: 0 10px 0 0;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+.breadcrumb_2 ul li a:after {
+    content: "";
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-left: 40px solid rgb(25, 145, 129);
+    position: absolute;
+    right: -40px;
+    top: 0;
+    z-index: 1;
+}
+.breadcrumb_2 ul li a:before {
+    content: "";
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-left: 40px solid rgb(237, 208, 168);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.breadcrumb_2 ul li a:hover {
+    background:rgb(20, 116, 103);
+    color: rgb(216, 150, 88);
+}
+.breadcrumb_2 ul li a:hover:after {
+    border-left-color: rgb(20, 116, 103);
+}
+.breadcrumb_2 ul li a:active {
+    background: gray;
+}
+.breadcrumb_2 ul li a:active:after {
+    border-left-color: gray;
+}
