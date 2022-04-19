@@ -1,0 +1,281 @@
+/* UNIVERSAL STYLES */
+html {
+    font-size: 16px;
+}
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+main {
+    position: relative;
+    top: 5rem;
+    display: flex-box;
+    padding-bottom: 2rem;
+}
+span.shrink {
+    font-size: 1rem;
+    font-style: italic;
+}
+span.grow {
+    font-weight: 600;
+}
+p {
+    font-size: 1.25rem;
+    font-family: "Montserrat", sans-serif;
+    color:rgba(255, 255, 255, .8);
+}
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    color:rgba(255, 255, 255, .8);
+}
+h3 {
+    font-size: 2.5rem;
+    font-family: "Updock", cursive;
+    font-weight: 500;
+    color:rgba(255, 255, 255, .8);
+}
+div.section-text {
+    height: fit-content;
+    width: 90%;
+    margin: 0 auto;
+}
+ul {
+    list-style: none;
+    color:rgba(255, 255, 255, .8);
+    font-size: 1.15rem;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.6;
+}
+/* NAV SECTION */
+
+header {
+    background-color: black;
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+div.logo p {
+    font-family: "Updock", cursive;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 3rem;
+}
+div.logo {
+    display: flex;
+    justify-self: left;
+}
+div.nav-content {
+    height: 5rem;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* vertically center logo pic */
+}
+.links a {
+    display: flex-box;
+    list-style: none;
+    color: rgba(255, 255, 255, .6);
+    justify-items: space-between;
+    display: inline-flex;
+    font-size: 1.3rem;
+}
+.links a:hover {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+div.links {
+    display: flex;
+    height: 5rem;
+    width: 67%;
+    justify-content: space-evenly; /* space links evenly in navbar */
+    align-items: center; /* vertically center links */
+}
+/* HEADING SECTION */
+div.main-heading {
+    height: 36rem;
+    width: 100%;
+    background-image: url("coffee-banner.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+div.heading {
+    padding-top: 1rem;
+    position: relative;
+    top: 25rem;
+    margin: 0 auto;
+    height: 10rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.main-heading h1 {
+    font-size: 2.5rem;
+    color: white;
+    font-family: "Updock", cursive;
+    font-weight: 200;
+    font-size: 4rem;
+    margin: 0;
+    text-align: center;
+}
+.main-heading p {
+    text-align: center;
+    color: white;
+    font-size: 1.3rem;
+}
+/* MISSION SECTION */
+/* MENU PAGE */
+main {
+    margin-left: .5rem;
+}
+.drink-menu h2 {
+    font-family: "Updock", cursive;
+    font-size: 4rem;
+    font-weight: 400;
+}
+.drink-menu h3 {
+    margin-bottom: -10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.25rem;
+
+}
+.drink-menu p {
+    font-style: italic;
+    font-size: 1rem;
+}
+section.drinks div.container {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2rem;
+    margin-left: .5rem;
+}
+section.drinks div.photo, section.drinks img {
+    height: 150px;
+    width: auto;
+    display: flex;
+    border: 1px solid rgba(255, 255, 255, .6);
+    border-radius: 5px;
+}
+section.drinks div.photo p { /* for add-ons section */
+    padding: 1.5rem;
+    position: relative;
+    bottom: 12px;
+}
+.drink-menu a {
+    text-decoration: none;
+    color: rgba(36, 182, 31, 0.884);
+}
+/* CONTACT PAGE */
+div.contact div h2 {
+    font-family: "Updock", cursive;
+    font-size: 3.5rem;
+    font-weight: 200;
+    text-align: center;
+    padding: 0 2rem;
+    line-height: .3;
+}
+div.contact div h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.75rem;
+    text-align: center;
+    padding: 0 2rem;
+    line-height: .5;
+}
+div.contact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+div.contact > div {
+    border: 1px solid rgba(255, 255, 255, .6);
+    border-radius: 25px;
+    background-color:rgba(255, 255, 255, .1);
+    width: 30rem;
+    margin-bottom: 3rem;
+    align-self: center;
+}
+#contactheader {
+    text-align: center;
+}
+h1#contactheader {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.5rem;
+}
+p#contactheader {
+    padding-bottom: 1rem;
+}
+/* ABOUT PAGE */
+div.about-section {
+    display: flex-box;
+    width: 100%;
+    height: fit-content;
+    align-self: center;
+}
+main.about h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 3.5rem;
+    font-weight: 300;
+    text-align: center;
+}
+main.about h2 {
+    font-family: "Updock", cursive;
+    text-align: left;
+    font-size: 2.7rem;
+    font-weight: 300;
+}
+
+    /* BARISTA BIOS */
+div.barista-bios { /* all bios in this container */
+    display: flex-box;
+    width: 100%;
+    align-content: space-between;
+}
+div.barista-outer-container {
+    height: 250px;
+    width: 100%;
+}
+div.barista-inner-container { /* container for each individual bio */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+div.bio-pic, div.bio-pic img {
+    display: flex;
+    height: 200px;
+    width: 200px;
+    margin-top: 5px;
+}
+.about img {
+    border: 1px solid rgba(255, 255, 255, .6);
+}
+div.bio-text { /* outer-div to behave as column (to sit beside photo) */
+    display: flex;
+}
+div.block { /* inner-div holding bio-text elements */
+    display: block;
+    margin-left: 225px;
+    margin-top: -200px;
+    width: auto;
+}
+.bio-text p { /* bio description */
+    font-size: 1rem;
+}
+.bio-text h3 {
+    margin-top: 0;
+}
+.bio-text h4 { /* caption beneath name */
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1rem;
+    margin-top: -30px;
+    opacity: 0.8;
+}
