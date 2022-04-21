@@ -212,6 +212,11 @@ div.drinks div.container {
     border: 1px solid transparent;
     visibility: hidden;
 }
+div.show-510px {
+    display: none;
+    visibility: hidden;
+    position: absolute;
+}
 
 div.container div.price {
     width: 9.875rem;
@@ -576,6 +581,29 @@ div.block { /* inner-div holding bio-text elements */
 }
 @media only screen and (max-width: 510px) {
     /* MENU SECTION */
+    li.hide-510px { /* ADD ONS SECTION */
+        display: none;
+        position: absolute;
+        visibility: hidden;
+    }
+    div.hide-510px {
+        display: none;
+        position: absolute;
+        visibility: hidden;
+    }
+    div.show-510px {
+        display: flex;
+        visibility: visible;
+        position: relative;
+        width: 100%;
+    }
+    div.float-510px {
+        display: flex;
+        flex-direction: row;
+    }
+    div.float-right {
+        justify-content: right;
+    }
     div.drink-menu p,
     div.drink-menu h3 {
         display: block;
@@ -584,7 +612,7 @@ div.block { /* inner-div holding bio-text elements */
     }
     div.drinks {
         display: flex-box;
-        width: 490px;
+        width: 350px;
         height: 100%;
         justify-content: center;
     }
