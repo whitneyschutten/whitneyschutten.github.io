@@ -8,6 +8,7 @@ body {
     padding: 0;
     background-color: black;
     color: white;
+    overflow-x: hidden;
 }
 main {
     position: relative;
@@ -15,6 +16,7 @@ main {
     display: flex-box;
     padding-bottom: 2rem;
 }
+
 span.shrink {
     font-size: 1rem;
     font-style: italic;
@@ -26,6 +28,7 @@ p {
     font-size: 1.25rem;
     font-family: "Montserrat", sans-serif;
     color:rgba(255, 255, 255, .8);
+    line-height: 1.25;
 }
 h2 {
     text-align: center;
@@ -69,6 +72,11 @@ div.logo p {
     color: rgba(255, 255, 255, 0.7);
     font-size: 3rem;
 }
+.logo .mobile275 {
+    visibility: hidden;
+    display: none;
+    position: absolute;
+}
 div.logo {
     display: flex;
     justify-self: left;
@@ -84,9 +92,13 @@ div.nav-content {
     display: flex-box;
     list-style: none;
     color: rgba(255, 255, 255, .6);
+    font-family: "Montserrat", sans-serif;
     justify-items: space-between;
     display: inline-flex;
     font-size: 1.3rem;
+}
+.links i {
+    padding-right: 1rem;
 }
 .links a:hover {
     color: rgb(255, 255, 255);
@@ -99,7 +111,7 @@ div.links {
     justify-content: space-evenly; /* space links evenly in navbar */
     align-items: center; /* vertically center links */
 }
-/* HEADING SECTION */
+/* HOME HEADER SECTION */
 div.main-heading {
     height: 36rem;
     width: 100%;
@@ -132,7 +144,15 @@ div.heading {
     color: white;
     font-size: 1.3rem;
 }
-/* MISSION SECTION */
+div.mission-statement {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+div.mission-statement > div {
+    max-width: 875px;
+}
+
 /* MENU PAGE */
 main {
     margin-left: .5rem;
@@ -144,35 +164,92 @@ main {
 }
 .drink-menu h3 {
     margin-bottom: -10px;
+    margin-left: 10px;
     font-family: "Montserrat", sans-serif;
     font-size: 2.25rem;
-
 }
 .drink-menu p {
+    margin-left: 10px;
     font-style: italic;
     font-size: 1rem;
 }
-section.drinks div.container {
-    display: flex;
-    justify-content: space-between;
-    margin-right: 2rem;
-    margin-left: .5rem;
+.drink-menu ul {
+    padding: 0;
 }
-section.drinks div.photo, section.drinks img {
+.drink-menu li {
+    line-height: 1.9rem;
+}
+.drink-menu div.price ul li {
+    text-align: center; /* center single-price above double-price in list */
+}
+ul span.black { /* equalize lists */
+    display: none;
+    visibility: hidden;
+}
+
+div.drinks {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+div.drinks > div.drink-menu {
+    display: flex-box;
+    width: 875px;
+}
+div.drinks div.container {
+    display: flex;
+    justify-content: space-evenly;
+    height: 11.5rem;
+    max-width: 875px;
+    border-bottom:1px dotted rgba(255, 255, 255, .6);
+}
+
+/* hidden div @ bottom */
+.drinks div.hide {
     height: 150px;
-    width: auto;
+    width: 150px;
+    display: flex;
+    border: 1px solid transparent;
+    visibility: hidden;
+}
+
+div.container div.price {
+    width: 9.875rem;
+    display: flex;
+}
+div.drinks div.item {
+    width: 15rem;
+    display: flex;
+}
+/* image AND div for image */
+div.drinks div.photo, div.drinks img {
+    height: 150px;
+    width: 150px;
     display: flex;
     border: 1px solid rgba(255, 255, 255, .6);
     border-radius: 5px;
 }
-section.drinks div.photo p { /* for add-ons section */
+.drinks div.mobile {
+    visibility: hidden;
+    display: none;
+    position: absolute;
+}
+.drinks div.container div.mobile img {
+    visibility: hidden;
+    display: none;
+    position: absolute;
+}
+
+div.drinks div.photo p { /* for add-ons section */
     padding: 1.5rem;
     position: relative;
-    bottom: 12px;
+    bottom: .75rem;
 }
 .drink-menu a {
     text-decoration: none;
     color: rgba(36, 182, 31, 0.884);
+    position: relative;
+    bottom: .75rem;
 }
 /* CONTACT PAGE */
 div.contact div h2 {
@@ -200,9 +277,11 @@ div.contact > div {
     border: 1px solid rgba(255, 255, 255, .6);
     border-radius: 25px;
     background-color:rgba(255, 255, 255, .1);
-    width: 30rem;
+    width: 29rem;
     margin-bottom: 3rem;
     align-self: center;
+    position: relative;
+    right: .3rem;
 }
 #contactheader {
     text-align: center;
@@ -211,15 +290,31 @@ h1#contactheader {
     font-family: "Montserrat", sans-serif;
     font-size: 2.5rem;
 }
-p#contactheader {
-    padding-bottom: 1rem;
+div.contact-header {
+    display: flex-box;
+    width: 47.3125rem;
+    height: auto;
+    margin: 0 auto;
+}
+div.contact-header p {
+    text-align: center;
+}
+.show875 {
+    display: none;
+    visibility: hidden;
+    position: absolute;
 }
 /* ABOUT PAGE */
 div.about-section {
-    display: flex-box;
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    height: fit-content;
-    align-self: center;
+    height: auto;
+    justify-content: center;
+}
+div.about-section > div {
+    max-width: 1000px;
+    margin: 0 auto;
 }
 main.about h1 {
     font-family: "Montserrat", sans-serif;
@@ -235,6 +330,11 @@ main.about h2 {
 }
 
     /* BARISTA BIOS */
+div.containbios {
+    width: 100%;
+    height: fit-content;
+    border: 1px solid white;
+}
 div.barista-bios { /* all bios in this container */
     display: flex-box;
     width: 100%;
@@ -260,6 +360,7 @@ div.bio-pic, div.bio-pic img {
 }
 div.bio-text { /* outer-div to behave as column (to sit beside photo) */
     display: flex;
+    padding-right: 10px;
 }
 div.block { /* inner-div holding bio-text elements */
     display: block;
@@ -278,4 +379,402 @@ div.block { /* inner-div holding bio-text elements */
     font-size: 1.1rem;
     margin-top: -30px;
     opacity: 0.8;
+}
+    /* make about bios stack for viewing on narrow screens */
+@media only screen and (max-width: 875px) { 
+    .hide { 
+        visibility: hidden;
+        display: none;
+    }
+    div.desktop-tab {
+        flex-shrink: 0;
+    }
+    div.desktop-tab img {
+        flex-shrink: 0;
+    }
+    /* NAV BAR */
+
+    .links i {
+        padding-right: 0.625rem;
+    }
+    /* HOME PAGE */
+    div.main-heading {
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* DRINK MENU PAGE */
+    div.drinks {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    div.drinks > div.drink-menu {
+        display: flex-box;
+    }
+    div.drinks div.container {
+        display: flex;
+        justify-content: space-evenly;
+        height: 11.5rem;
+        border-bottom:1px dotted rgba(255, 255, 255, .6);
+    }
+    div.menu-container h3,
+    div.menu-container p {
+        text-align: center;
+    }
+    .menu-container .container div.price,
+    .menu-container .container div.item {
+        justify-content: center;
+    }
+
+    /* CONTACT PAGE */
+    div.contact-header {
+        width: 650px;
+    }
+    /* ABOUT PAGE */
+    main.about div.jump {
+        display: flex;
+        height: 1.2rem;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    main.about div.jump div.center {
+        display: flex;
+        height: 100%;
+        width: fit-content;
+
+    }
+    main.about div.jump a {
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.2rem;
+        color: rgba(255, 255, 255, .6);
+    }
+    main.about div.jump a:hover {
+        color: rgb(255, 255, 255);
+    }
+    div#staff {
+        scroll-margin-top: 81px;
+    }
+    .hide875 {
+        display: none;
+        visibility: hidden;
+        position: absolute;
+    }
+    .show875 {
+        display: flex;
+        visibility: visible;
+        position: relative;
+    }
+    div.name {
+        height: 3rem;
+        width: 100%;
+        display: inline-block;
+    }
+    h3.name {
+        margin: 0 auto;
+        text-align: center;
+    }
+    div.contain-bios {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    div.show875 {
+        display: flex;
+        position: relative;
+        visibility: visible;
+    }
+    div.barista-bios {
+        display: flex-box;
+        width: 646px;
+        height: 109rem;
+        padding: .5rem;
+        margin-right: .5rem;
+        
+    }
+    div.barista-outer-container {
+        width: 99%;
+        height: 34.5rem;
+    }
+    div.barista-inner-container { 
+        /* container, 1 bio */
+        display: flex-box;
+        align-content: space-around;
+        height: 34rem;
+        width: 99%;
+    }
+    div.bio-pic, div.bio-pic img {
+        display: block;
+        margin: 0 auto;
+
+    }
+    div.block {
+        display: block;
+        width: 100%;
+    }
+    h3.show875 {
+        margin-bottom: 0;
+        
+    }
+    div.show875 h4 {
+        font-size: 1.2rem;
+        margin: 0 auto;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 300;
+    }
+    div.show875 { /* Bio-P div */
+        display: block;
+        width: 100%;
+        flex-direction: row;
+    }
+    div.bio-text {
+        display: inline-block;
+        width: 8rem;
+        margin: 0 auto;
+        height: 3.3rem;
+    }
+}
+@media only screen and (max-width: 675px) { 
+    div.main-heading {
+        background-size: cover;
+        background-position: center;
+    }
+    /* NAV BAR */
+    .hide675 {
+        position: absolute;
+        display: none;
+    }
+
+    /* MENU PAGE */
+    div.drinks {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    div.drinks > div.drink-menu {
+        display: flex-box;
+    }
+    div.drinks div.container {
+        display: flex;
+        height: 11.5rem;
+        border-bottom:1px dotted rgba(255, 255, 255, .6);
+    }
+    .drinks .container div.item {
+        width: 8.125rem;
+    }
+    .menu-container .container div.price,
+    .menu-container .container div.item {
+        justify-content: center;
+    }
+    /* CONTACT PAGE */
+    div.contact-header {
+        width: 490px;
+    }
+}
+@media only screen and (max-width: 510px) {
+    /* MENU SECTION */
+    div.drink-menu p,
+    div.drink-menu h3 {
+        display: block;
+        margin-left: 0;
+        text-align: center;
+    }
+    div.drinks {
+        display: flex-box;
+        width: 490px;
+        height: 100%;
+        justify-content: center;
+    }
+    div.drink-menu {
+        display: flex-box;
+        width: 99%;
+        height: 100%;
+        justify-content: center;
+    }
+    div.menu-container {
+        display: flex-box;
+        width: 100%;
+    }
+    .menu-container .container div.price,
+    .menu-container .container div.item {
+        justify-content: center;
+    }
+    .drink-menu p, .drink-menu a {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        text-align: center;
+    }
+    div.drink-description {
+        display: flex;
+        margin: 0 auto;
+        width: 60%;
+        justify-content: center;
+    }
+    .drinks div.desktop-tab {
+        visibility: hidden;
+        display: none;
+        position: absolute;
+    } 
+    .drinks .drink-menu div.mobile {
+        visibility: visible;
+        display: flex;
+        position: relative;
+        width: 99%;
+        height: 150px;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+    /* CONTACT PAGE */
+    div.contact-header {
+        width: 350px;
+    }
+    div.contact > div {
+        width: 330px;
+    }
+    .contact div.email h3 {
+        font-size: 1.3rem;
+        position: relative;
+        right: 5px;
+    }
+    .contact div.social h3 {
+        position: relative;
+        right: 12px;
+    }
+    div.main-heading {
+        background-size: cover;
+        background-position: center;
+    }
+    div.hide {
+        display: none;
+    }
+    div#shift-right ul {
+        position: relative;
+        left: 1.8rem;
+    }
+    div.contact-header {
+        width: 320px;
+        margin: 0 auto;
+    }
+    /* ABOUT PAGE */
+    div.barista-inner-container div.shrink-510px p {
+        font-size: 1.1rem;
+    }
+
+    div.barista-bios {
+        display: flex-box;
+        width: 646px;
+        height: 113rem;
+        padding: .5rem;
+        margin-right: .5rem;
+    }
+    div.barista-outer-container {
+        width: 99%;
+        height: 33.2%;
+    }
+    div.barista-inner-container { 
+        /* container, 1 bio */
+        display: flex-box;
+        align-content: space-around;
+        height: 99%;
+        width: 99%;
+    }
+    
+}
+/* adjust font sizes for phones */
+@media only screen and (max-width: 350px) {
+    html {
+        font-size: 12px;
+    }
+    /* NAV BAR */
+    .logo p {
+        visibility: Hidden;
+        display: none;
+        position: absolute;
+    }
+    .logo .mobile275 {
+        visibility: visible;
+        display: inline-block;
+        position: relative;
+        right: 1rem;
+    }
+    /* HOME PAGE */
+    .mission-statement div.section-text p {
+        line-height: 1.5;
+    }
+    /* MENU PAGE */
+    .drinks div.item li {
+        margin-left: -3.25rem;
+    }
+    div.drinks div.container {
+        margin-right: 5px;
+        margin-left: 5px;
+        width: 100%;
+    }
+    div.drinks div.container .price ul {
+        padding-left: 5px;
+
+    }
+    div.main-heading {
+        background-size: cover;
+        background-position: center;
+    }
+    div.price li {
+        position: relative;
+        left: 2rem;
+    }
+    div#shift-mobile {
+        position: relative;
+        left: 3rem;
+    }
+    /* CONTACT PAGE */
+    div.contact-header {
+        width: 250px;
+        margin: 0 auto;
+    }
+    div.contact > div {
+        width: 250px;
+    }
+    /* ABOUT PAGE */
+    div.barista-bios {
+        display: flex-box;
+        width: 646px;
+        height: 135rem;
+        padding: .5rem;
+        margin-right: .5rem;
+    }
+    div.barista-outer-container {
+        width: 99%;
+        height: 33.2%;
+    }
+    div.barista-inner-container { 
+        /* container, 1 bio */
+        display: flex-box;
+        align-content: space-around;
+        height: 99%;
+        width: 99%;
+    }
+    div.barista-inner-container div.shrink-510px p {
+        font-size: 1.3rem;
+        line-height: 1.3;
+    }
+    div.section-text div.shrink-510px p {
+        font-size: 1.3rem;
+        line-height: 1.3;
+    }
+
+}
+@media only screen and (max-width: 275px) {
+
+    div.links {
+        float: right;
+        justify-content: space-between;
+    }
+    div.main-heading {
+        background-size: cover;
+        background-position: center;
+    }
 }
