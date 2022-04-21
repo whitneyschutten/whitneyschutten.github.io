@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
     <link rel="stylesheet" href="resources\index.css">
+    <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Updock&display=swap" rel="stylesheet">
+    <!--icon library-->
+    <script src="https://kit.fontawesome.com/fb7be3d1fa.js" crossorigin="anonymous"></script>
     <title>About Us - Promise</title>
 </head>
 <body>
@@ -17,12 +21,13 @@
                 <div class="nav-content">
                     <div class="nav logo">
                         <p>Promise</p>
+                        <p class="logo mobile275">P</p>
                     </div>
                     <div class="nav links">
-                        <a href="index.html">Home</a>
-                        <a href="menu.html">Menu</a>
-                        <a href="contact.html">Contact</a>
-                        <a>About Us</a>
+                        <a href="index.html"><i class="fa-solid fa-house"></i><span class="hide675">Home</span></a>
+                        <a href="menu.html"><i class="fa-solid fa-mug-hot"></i><span class="hide675">Menu</span></a>
+                        <a href="contact.html"><i class="fa-solid fa-address-book"></i><span class="hide675">Contact</span></a>
+                        <a>About</a>                    
                     </div>
                 </div>
             </nav>
@@ -30,6 +35,11 @@
     </header>
     <main class="about">
         <h1>About Cafe Promise</h1>
+        <div class="jump show875">
+            <div class="center">
+                <a href="#staff" class="jump">Jump to: Meet the Staff</a>
+            </div>
+        </div>
         <div class="about-section">
             <div class="section-header">
                 <h2>How it all Started</h2>
@@ -43,51 +53,79 @@
 
                 <p>We firmly believe that it's <em>this</em> set of values that sets us apart from the big coorporate shops. We focus on the small and local, on the <em>people,</em> rather than just the numbers. We hope you feel the difference, too, and return time and time again to take a break from the outside world with us. We promise to keep our values the same as the days go on. Welcome, friends!</p>
             </div>
-            <div class="section-header lower">
+            <div class="section-header lower" id="staff">
                 <h2>Meet Our Staff</h2>
             </div>
             <div class="section-text">
                 <p>We understand that coffee can get personal, and your relationship with your barista can be a big part of that! Get to know these wonderful individuals and feel the familiarity the moment you reach the counter!</p>
             </div>
-            <div class="barista-bios"> <!--All bios in this container-->
-
-                <div class="barista-outer-container"> <!--individual bio-->
-                    <div class="barista-inner-container"> <!--create padding-->
-                        <div class="bio-pic"> <!--make this div and sibling sit side-by-side-->
-                            <img src="resources\photos\whitney.JPG">
-                        </div>
-                        <div class="bio-text"><!--make this div sit beside that one-->
-                            <div class="block">
-                                <h3>Whitney</h3>
-                                <h4>"The Impulsive One" -owner & operator</h4>
+            <div class="contain-bios">
+                <div class="barista-bios"> <!--All bios-->
+                    <div class="barista-outer-container"> <!--1 bio-->
+                        <div class="barista-inner-container">
+                            <div class="bio-pic">
+                                <img src="resources\photos\whitney.JPG">
+                            </div>
+                            <div class="show875 name">
+                                <h3 class="name">Whitney</h3>
+                            </div>
+                            <div class="bio-text hide875">  
+                                <div class="block">
+                                    <h3>Whitney</h3>
+                                    <h4 class="hide875">"The Impulsive One" -Owner & Operator</h4>
+                                    <p class="hide875">She worked for nearly a decade with multiple coffee shops in her town, alongside waiting tables. After hitting the ceiling at various locations, she needed a change. If she wanted a boss who engaged with her employees <em>and</em> the business, a dynamic that was healthy for everyone on board, she would have to BE that boss <span class="shrink">(boss is a 4-letter word, let's say "team leader")</span>.</p>
+                                </div>                          
+                            </div>
+                            <div class="show875">
+                                <h4>"The Impulsive One"</h4>
+                                <h4>-Owner & Operator</h4>
+                            </div>
+                            <div class ="show875 shrink-510px">
                                 <p>She worked for nearly a decade with multiple coffee shops in her town, alongside waiting tables. After hitting the ceiling at various locations, she needed a change. If she wanted a boss who engaged with her employees <em>and</em> the business, a dynamic that was healthy for everyone on board, she would have to BE that boss <span class="shrink">(boss is a 4-letter word, let's say "team leader")</span>.</p>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="barista-outer-container">
-                    <div class="barista-inner-container"> <!--individual bio-->
-                        <div class="bio-pic">
-                            <img src="resources\photos\dennis.jpg">
-                        </div>
-                        <div class="bio-text">
-                            <div class="block">
-                                <h3>Dennis</h3>
-                                <h4>"The Practical One" -owner & operator</h4>
+                    <div class="barista-outer-container">
+                        <!--individual bio-->
+                        <div class="barista-inner-container"> 
+                            <div class="bio-pic">
+                                <img src="resources\photos\dennis.jpg">
+                            </div>
+                            <div class="show875">
+                                <h3 class="name">Dennis</h3>
+                            </div>
+                            <div class="bio-text hide875">
+                                <div class="block">
+                                    <h3>Dennis</h3>
+                                    <h4>"The Practical One" -Owner & Operator</h4>
+                                    <p>Born and raised in The Netherlands, Dennis hopped over the pond <span class="shrink">(The Atlantic, actually)</span> to be with the love of his life. Little did he know, he would be knee-deep in moments of "helping out" at his wife's new business! While they promised to never work in the same place at the same time, this proved to be a happy change-in-plans. With his customer-service expertise and love for carpentry, Dennis found a happy place with us <span class="shrink">(thank goodness!)</span>.</p>
+                                </div>                         
+                            </div>
+                            <div class="show875  shrink-510px">
                                 <p>Born and raised in The Netherlands, Dennis hopped over the pond <span class="shrink">(The Atlantic, actually)</span> to be with the love of his life. Little did he know, he would be knee-deep in moments of "helping out" at his wife's new business! While they promised to never work in the same place at the same time, this proved to be a happy change-in-plans. With his customer-service expertise and love for carpentry, Dennis found a happy place with us <span class="shrink">(thank goodness!)</span>.</p>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="barista-outer-container">
-                    <div class="barista-inner-container"> <!--individual bio-->
-                        <div class="bio-pic">
-                            <img src="resources\photos\elena.jpg">
-                        </div>
-                        <div class="bio-text">
-                            <div class="block">
-                                <h3>Elena</h3>
-                                <h4>"The Fun One" -Head Barista</h4>
+                    <div class="barista-outer-container">
+                        <div class="barista-inner-container">   <!--individual bio-->
+                            <div class="bio-pic">
+                                <img src="resources\photos\elena.jpg">
+                            </div>
+                            <div class="show875 name">
+                                <h3 class="name">Elena</h3>
+                            </div>
+                            <div class="bio-text hide875">
+                                <div class="block">
+                                    <h3>Elena</h3>
+                                    <h4>"The Fun One" -Head Barista</h4>
+                                    <p>This ray of sunshine is always a joy to interact with! Elena has many years of customer-service behind her, and is incredibly intuitive when it comes to playing 20-questions. Not sure what you would like? Ask our head-barista for some guidance, and she'll lead the way. Feeling shy? Don't worry, she's a pro at making anyone and <em>everyone</em> feel welcome and at home. Really, we love her.</p>
+                                </div>                          
+                            </div>
+                            <div class="show875">
+                                <h4>"The Fun One"</h4>
+                                <h4>-Head Barista</h4>
+                            </div>
+                            <div class="show875 shrink-510px">
                                 <p>This ray of sunshine is always a joy to interact with! Elena has many years of customer-service behind her, and is incredibly intuitive when it comes to playing 20-questions. Not sure what you would like? Ask our head-barista for some guidance, and she'll lead the way. Feeling shy? Don't worry, she's a pro at making anyone and <em>everyone</em> feel welcome and at home. Really, we love her.</p>
                             </div>
                         </div>
