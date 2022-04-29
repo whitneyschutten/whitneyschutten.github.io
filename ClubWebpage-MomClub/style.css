@@ -1,0 +1,584 @@
+html {
+    font-size: 16px;
+}
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#join, #location, #blog, #about {
+    scroll-margin-top: 4.5rem;
+}
+h1, a {
+    font-family: 'Nothing You Could Do', cursive;
+}
+h2 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 2.5rem;
+    color:rgb(49, 49, 49);
+}
+h3, p {
+    font-family: 'Quicksand', sans-serif;
+}
+h3 {
+    font-size: 1.5rem;
+    color: rgb(59, 59, 59);
+}
+p {
+    font-size: 1.25rem;
+}
+.mobile img, .mobile {
+    display: none;
+    position: absolute;
+}
+
+/* HEADER / NAV BAR */
+header nav {
+    position: fixed;
+    height: 3.0625rem;
+    width: 100%;
+    z-index: 999;
+}
+div.nav {
+    height: 4.5rem;
+    width: 100%;
+    border-bottom: 1px solid rgb(149, 166, 184);
+    background-image: url(resources/fog.jpg);
+    background-position-y: 25%;
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav a {
+    font-size: 1.5rem;
+    text-decoration-line: none;
+    color: rgb(71, 71, 71);
+    height: 2rem;
+    width: 6rem;
+    text-align: center;
+}
+.nav a:hover {
+    font-weight: 600;
+}
+
+/* MAIN */
+div.main {
+    position: relative;
+    top: 4.5rem;
+    width: 100%;
+}
+/* HERO SECTION */
+div.hero-image {
+    display: flex;
+    background-image: url(resources/sunset.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50rem;
+    width: 100%;
+}
+div.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 17%;
+    left: 50%;
+    height: 152px;
+    width: 425px;
+}
+div.col {
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.hero-text h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+p#caption {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.window-pane-other {
+    width: 100%;
+    height: 5rem;
+    background: url(resources/wood-horizontal.jpg);
+    background-position-y: 40%;
+    background-size: cover;
+    border-top: 1px solid rgba(119, 109, 92, 0.795);
+}
+
+/* JOIN US */
+div.join {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 20rem;
+    background-image: url(resources/grass.jpg);
+    background-size: cover;
+    background-position-y: 75%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.join p {
+    text-align: center;
+    margin: 0;
+}
+    /* Mock Join Button */
+.button {
+    box-sizing: border-box;
+    border: 3px solid white;
+    background-color:rgb(202, 194, 123);
+    width: 11rem;
+    height: 4rem;
+}
+.button:hover {
+    border: 3px solid rgb(211, 193, 31);
+    cursor: pointer;
+    box-shadow: 0 0 12px 2px white;
+}
+.join h2 {
+    color: white;
+    text-align: center;
+    margin: 0;
+    letter-spacing: 3px;
+}
+.font {
+    font-family: 'Nothing You Could Do', cursive;
+    font-weight: 600;
+}
+div.txt-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    padding: .5rem;
+    background-color:rgba(202, 194, 123, 0.877);
+    border: 1px solid rgba(202, 194, 123, 0.63);
+    border-radius: 10px;
+    box-shadow: 0 0 15px 3px rgba(245, 245, 245, 0.774);
+}
+
+/* FAVORITE MEET-UPS STRUCTURE / BORDER */
+.window-container {
+    width: 100%;
+    display: flex-box;
+}
+.window-pane-top {
+    height: 5rem;
+    width: 100%;
+    background: url(resources/wood-horizontal.jpg);
+    background-position: top;
+    background-size: cover;
+    border-bottom: 1px solid rgba(85, 76, 61, 0.795); 
+}
+.meet-background {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    background:url(resources/stars.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    padding: 2rem;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+
+}
+.window-pane-bottom {
+    width: 100%;
+    height: 5rem;
+    background: url(resources/wood-horizontal.jpg);
+    background-position: bottom;
+    background-size: cover;
+    border-top: 1px solid rgba(119, 109, 92, 0.795);
+}
+    /* MEET-UPS CONTENT */
+div.sky-header {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    width: 25rem;
+    height: 3.75rem;
+    border: 1px solid transparent;
+    background: linear-gradient(to bottom left, rgba(121, 220, 238, 0.95), rgba(227, 252, 250, 0.95), rgba(245, 245, 245, .95));
+    border: 4px solid rgba(185, 149, 231, 0.705);
+    background-color:rgba(231, 231, 230, 0.904);
+}
+div.content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-height: 270.52px;
+    border: 1px solid transparent;
+    box-shadow: .25rem -.2rem 1rem .5rem rgba(254, 255, 255, 0.774), -.2rem .1rem .8rem .5rem rgba(185, 149, 231, 0.705);
+    background: linear-gradient(to bottom left, rgba(245, 245, 245, .7), rgba(149, 226, 240, 0.7), rgba(227, 252, 250, 0.8), rgba(245, 245, 245, .7));
+    background-color:rgba(231, 231, 230, 0.904);
+    border-radius: 20px;
+    padding: 1.25rem;
+    margin: 1rem 1.25rem;
+}
+div.img {
+    display: flex;
+    max-width: 320px;
+    max-height: 213.33px;
+    border: 2px solid rgb(82, 82, 82);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 4px 2px rgba(98, 118, 139, 0.712)
+}
+.content img {
+    max-width: 100%;
+}
+.content h3 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: .7rem;
+}
+
+/* BLOG SECTION */
+.blog {
+    display: flexbox;
+    width: 100%;
+    height: fit-content;
+    box-sizing: border-box;
+    background-image: url(resources/pattern.jpg);
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-color:rgba(185, 149, 231, 0.705);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.blog-header {
+    text-align: center;
+    width: 65%;
+    margin: 0 auto;
+}
+div.blog-header {
+    border: .4rem ridge rgb(116, 115, 115);
+    background-color: rgba(255, 255, 255, 0.856);
+    margin: 0 auto;
+}
+
+.blog-entry { /* white blocks of posts */
+    box-sizing: border-box;
+    display: flex;
+    width: 90%;
+    height: 20rem;
+    flex-direction: column;
+    border: .4rem ridge rgb(116, 115, 115);
+    background-color: rgba(255, 255, 255, 0.856);
+    margin: 1rem auto;
+}
+.blog-preview {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    height: 225px;
+}
+.title {
+    text-align: left;
+    width: 175%;
+    margin-left: 1rem;
+}
+div.left {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.left img {
+    display: flex;
+    height: 200px;
+    width: auto;
+    margin-left: 1rem;
+    box-shadow: 0 0 10px 5px rgba(95, 95, 95, 0.849);
+}
+.right {
+    box-sizing: border-box;
+    display: flex;
+    height: 225px;
+    flex-direction: column;
+    position: relative;
+    top: 5.75rem;
+}
+.mobile {
+    display: none;
+    position: absolute;
+}
+.blog-row {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    bottom: 1rem;
+}
+.intro {
+    box-sizing: border-box;
+    padding-left: 1rem;
+    height: 80%;
+}
+.intro p {
+    margin-top: 0;
+}
+.author, .author p {
+    justify-content: right;
+    height: 2rem;
+    margin-right: 1rem;
+    font-size: 0.85rem;
+    font-style: italic;
+}
+.author {
+    height: 15%;
+    width: 100%;
+}
+/* ABOUT SECTION (footer) */
+footer {
+    display: flexbox;
+    margin-top: 4.5rem;
+    background-image: url(resources/footer-background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+footer h3 {
+    display: inline-flex;
+    position: relative;
+    left: 50%;
+    top: 1.5rem;
+}
+div.footer-img {
+    display: flex;
+    max-height: 200px;
+    position: relative;
+    left: .75rem;
+    bottom: 2rem;
+}
+footer img {
+    display: flex;
+    max-height: 200px;
+    width: auto;
+    box-shadow: 0 0 10px 5px rgba(95, 95, 95, 0.849);
+}
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.footer-text {
+    display: flexbox;
+    width: 60%;
+    flex-direction: column;
+    text-indent: 1.5rem;
+    justify-content: center;
+    margin-right: .5rem;
+}
+footer p {
+    font-size: 1rem;
+}
+@media only screen and (max-width: 945px) {
+    div.hero-text {
+        top: 17%;
+        left: 35%;
+    }
+    .footer-text {
+        width: 45%;
+    }
+}
+@media only screen and (max-width: 777px) {
+    .blog-preview .intro p {
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 755px) {
+    h3 {
+        font-size: 1.25rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    footer h3 {
+        left: 55%;
+    }
+}
+@media only screen and (max-width: 735px) {
+    div.footer-img {
+        display: none;
+        position: absolute;
+    }
+    footer {
+        background: url(resources/footer.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: 25%;
+    }
+    div.footer-text {
+        width: 90%;
+        height: 100%;
+        background: rgba(235, 235, 235, 0.805);
+        padding-left: .5rem;
+    }
+    footer h3 {
+        position: static;
+        margin: 1rem auto;
+    }
+}
+@media only screen and (max-width: 711px) {
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+    div.hero-text {
+        position: static;
+        margin: 0 auto;
+    }
+
+    /* MEET-UPS */
+    .meet-background {
+        height: fit-content;
+        padding-top: 1rem;
+    }
+    .row {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: fit-content;
+        padding: 1rem;
+    }
+
+    /* BLOG */
+    .left img { /* to swap to mobile image placement */
+        display: none;
+        position: absolute;
+    }
+    .blog-entry {
+        height: fit-content;
+        display: flex;
+        flex-grow: 2;
+    }
+    div.blog-preview { /* column view for mobile/split windows */
+        justify-content: flex-start;
+        flex-direction: column;
+        flex-grow: 1;
+        height: 100%;
+    }
+
+/* title, now column-top */
+    div.left { 
+        box-sizing: border-box;
+        height: 60px;
+        align-content: center;
+        border-bottom: 2px dashed rgb(59, 59, 59);
+    }
+    .title {
+        width: 94%;
+    }
+    .right { /* pic/content/author, now column-bottom */
+        box-sizing: border-box;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        position: relative;
+        top: .95rem;
+    }
+    div.mobile { /* image container */
+        box-sizing: border-box;
+        overflow: hidden;
+        display: flex;
+        width: 100%;
+        height: 250px;
+        position: relative;
+        align-self: flex-start;
+        margin: 0 auto;
+    }
+    .mobile img {
+        display: flex;
+        max-width: 100%;
+    }
+    .intro {
+        padding-left: .2rem;
+        height: fit-content;
+    }
+    div.author, .author p {
+        margin: 0;
+        box-sizing: border-box;
+        padding-right: .5rem;
+        align-items: center;
+        align-self: flex-end;
+        height: 32px;
+    }
+}
+@media only screen and (max-width: 495px) {
+ html {
+    font-size: 12px;
+ }
+ /* LOCATIONS SECTION */
+ .content h3 {
+     font-size: 20px;
+ }
+ /* BLOG SECTION */
+ .intro {
+     height: 15%;
+ }
+ .mobile img {
+    flex-basis: 150px;
+    max-width: 100%;
+    min-width: 150px;
+    align-self: center;
+ }
+ div.mobile { /* image container */
+    min-width: 150px;
+    display: flex;
+    height: 125px;
+ }
+}
+@media only screen and (max-width: 400px) {
+    div.hero-image {
+        background-position-x: 15%;
+    }
+/* JOIN SECTION */
+    div.join {
+        box-sizing: border-box;
+        height: fit-content;
+        padding: .75rem;
+    }
+    div.txt-background {
+        box-sizing: border-box;
+        margin: .5rem;
+    }
+/* LOCATIONS SECTION */
+    .sky-header {
+        font-size: 1.5rem;
+    }
+    div.sky-header {
+        width: 90%;
+    }
+    .content {
+        box-sizing: border-box;
+        width: 90%;
+    }
+    .content h3 {
+        font-size: 1.25rem;
+    }
+}
+@media only screen and (max-width: 320px) {
+    /* BLOG SECTION */
+    h3.title {
+        font-size: 1rem;
+        margin-right: .5rem;
+        margin-left: .5rem;
+    }
+    .nav a {
+        font-size: 1.25rem;
+    }
+}
